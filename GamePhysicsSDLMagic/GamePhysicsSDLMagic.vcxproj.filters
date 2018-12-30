@@ -6,4 +6,7 @@
   <ItemGroup>
     <None Include="SDL2.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Images\Hello_world.bmp" />
+  </ItemGroup>
 </Project>
