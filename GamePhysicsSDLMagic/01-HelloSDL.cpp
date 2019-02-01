@@ -56,6 +56,9 @@ int main(int argc, char* args[])
       }
     }
 
+    // To prevent using 100% CPU time
+    SDL_Delay(10);
+
     //Apply the image
     SDL_BlitSurface(pPictureSurface, NULL, pScreenSurface, NULL);
 
