@@ -42,13 +42,26 @@ int main(int argc, char* args[])
     return 20;
   }
 
-  SDL_BlitSurface(pPictureSurface, NULL, pScreenSurface, NULL);
+  SDL_Event e;
+  bool bQuit = false;
 
-  //Update the surface
-  SDL_UpdateWindowSurface(pWindow);
+  // Main loop
+  while (bQuit == false)
+  {
+    while (SDL_PollEvent(&e) != 0)
+    {
+      if (e.type == SDL_QUIT)
+      {
+        bQuit = true;
+      }
+    }
 
-  //Wait two seconds
-  SDL_Delay(2000);
+    //Apply the image
+    SDL_BlitSurface(pPictureSurface, NULL, pScreenSurface, NULL);
+
+    //Update the surface
+    SDL_UpdateWindowSurface(pWindow);
+  }
 
   SDL_FreeSurface(pPictureSurface);
 
