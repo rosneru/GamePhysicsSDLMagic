@@ -9,8 +9,16 @@ The aim for this project is
 
 ## Development environment ##
 
-- Visual Studio 2017 / C++ project
-- The solution expects the extracted *SDL* 2.0.9 archive (platform Win32/64) at the location
+Currently it is a Visual Studio 2019 / C++ solution.
 
+The solution expects the extracted *SDL* 2.0.9 archive 
+(platform Win32/64) at the location
 
-    c:\Development\Cpp\SDL2-2.0.9\
+    c:\Development\Cpp\SDL2-2.0.12\
+
+To run the compiled binaries the following path must be added to Windows
+environment variable for **System** (not e.g. for *user Administrator*)
+
+    c:\Development\Cpp\SDL2-2.0.12\lib\x64\
+
+Only then the SDL2.dll is found at runtime.

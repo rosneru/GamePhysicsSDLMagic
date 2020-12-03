@@ -1,9 +1,9 @@
 /*
- * This source code copyrighted by Lazy Foo' Productions (2004-2015) 
+ * This source code copyrighted by Lazy Foo' Productions (2004-2015)
  * and may not be redistributed without written permission
  */
 
-//Using SDL and standard IO
+ //Using SDL and standard IO
 #include <SDL.h>
 #include <stdio.h>
 
@@ -21,8 +21,8 @@ int main(int argc, char* args[])
   }
 
   //Create window
-  SDL_Window* pWindow = SDL_CreateWindow("SDL Tutorial", 
-    SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, 
+  SDL_Window* pWindow = SDL_CreateWindow("SDL Tutorial",
+    SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH,
     SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
 
   if (pWindow == NULL)
@@ -35,7 +35,7 @@ int main(int argc, char* args[])
   SDL_Surface* pScreenSurface = SDL_GetWindowSurface(pWindow);
 
   //Fill the surface white
-  SDL_Surface* pPictureSurface = SDL_LoadBMP("Images/Hello_world.bmp");
+  SDL_Surface* pPictureSurface = SDL_LoadBMP("Assets/Hello_world.bmp");
   if (pPictureSurface == NULL)
   {
     printf("Unable to load the image: %s\n", SDL_GetError());
