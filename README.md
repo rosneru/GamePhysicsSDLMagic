@@ -11,7 +11,7 @@ The aim for this project is
 
 Currently it is a Visual Studio 2019 / C++ solution.
 
-The solution expects the extracted *SDL* 2.0.9 archive 
+The solution expects the extracted [SDL 2.0.12 developers archive](https://www.libsdl.org/download-2.0.php)
 (platform Win32/64) at the location
 
     c:\Development\Cpp\SDL2-2.0.12\
