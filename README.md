@@ -17,7 +17,7 @@ The solution expects the extracted [SDL 2.0.12 developers archive](https://www.l
     c:\Development\Cpp\SDL2-2.0.12\
 
 To run the compiled binaries the following path must be added to Windows
-environment variable for **System** (not e.g. for *user Administrator*)
+environment variable **Path** for **System** (and not for *User* only)
 
     c:\Development\Cpp\SDL2-2.0.12\lib\x64\
 
